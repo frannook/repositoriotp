@@ -1,0 +1,400 @@
+/* generales */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Para evitar el scroll horizontal */
+}
+
+.section {
+    padding: 5rem;
+    background-color: white;
+    box-sizing: border-box;
+    margin: auto; /* Centrar la sección horizontalmente */
+    max-width: 1200px; /* Limitar el ancho máximo de la sección */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Para heredar el color del enlace del elemento padre */
+}
+
+
+/* menú */
+#nav-menu {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    position: fi;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f1c40f;
+}
+
+/* quienes somos */
+.section1 {
+    width: 100%;
+    padding: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin-top: 60px; /* para evitar que el contenido quede oculto detrás del menú */
+    max-width: 1200px; /* Limitar el ancho máximo de la sección */
+    margin: auto; /* Centrar la sección horizontalmente */
+}
+
+.section1 .titulo {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.section1 .texto {
+    color: black;
+    font-size: 1.2rem;  /* Incrementar el tamaño del texto */
+    line-height: 1.8;   /* Incrementar el espacio entre líneas para mejor legibilidad */
+    text-align: justify;
+}
+
+/* drops */
+.section2 {
+    width: auto;
+    background-color: black;
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 60px; /* para evitar que el contenido quede oculto detrás del menú */
+    max-width: 1200px; /* Limitar el ancho máximo de la sección */
+    margin: auto; /* Centrar la sección horizontalmente */
+}
+
+.section2 .titulo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section2 .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section2 .images img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.section2 .images img:hover {
+    transform: scale(1.05);
+}
+
+/* temporada */
+.section3 {
+    width: 100%;
+    background-color: white;
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 60px; /* para evitar que el contenido quede oculto detrás del menú */
+    max-width: 1200px; /* Limitar el ancho máximo de la sección */
+    margin: auto; /* Centrar la sección horizontalmente */
+}
+
+.section3 .titulo {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.section3 .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section3 .images img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.section3 .images img:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-buy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 20px; /* Tamaño de la letra */
+}
+
+.image-container:hover .btn-buy {
+    opacity: 1; /* Mostrar el botón al pasar el cursor sobre la imagen */
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto;
+    gap: 10px;
+}
+
+
+
+/* ubicacion */
+#ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 60px; /* para evitar que el contenido quede oculto detrás del menú */
+}
+
+.ubicacion-mapa {
+    width: 100%;
+    max-width: 800px; /* Ajusta este valor según tus necesidades */
+    height: 600px;
+    border: 0;
+}
+
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #191919;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #040303;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(61, 99, 99);
+}
+
+.pie-pagina .grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* Acordeón, Preguntas frecuentes */
+.accordion {
+    width: 80%; /* Aumentar el ancho al 80% del contenedor padre */
+    max-width: 800px; /* Ancho máximo del acordeón */
+    background-color: #000000; /* Fondo negro para el acordeón */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    overflow: hidden;
+    margin: 20px auto; /* Centrar el acordeón y agregar un margen superior e inferior */
+}
+
+.accordion-button {
+    background-color: #000000; /* Fondo negro para el botón */
+    color: rgb(255, 255, 255); /* Texto blanco */
+    font-weight: bold;
+    border: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff; /* Cambiar el color del botón cuando está expandido */
+    color: #000000;
+}
+
+.accordion-body {
+    background-color: #ffffff; /* Fondo negro para el contenido */
+    color: #000000; /* Color del texto */
+}
+
+.accordion-header {
+    border-bottom: 1px solid #f0f0f0; /* Línea separadora entre elementos */
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .accordion {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .section2 .images img,
+    .section3 .images img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
+        grid-gap: 20px; /* Reducir el espacio entre elementos */
+        text-align: center; /* Asegurar que el contenido esté centrado */
+    }
+
+    .pie-pagina .grupo-1 .box figure img {
+        width: 150px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .pie-pagina .grupo-1 .box h2,
+    .pie-pagina .grupo-1 .box p {
+        font-size: 18px; /* Ajustar el tamaño de la fuente */
+    }
+
+    .pie-pagina .grupo-1 .red-social a {
+        margin-right: 5px; /* Reducir el espacio entre íconos de redes sociales */
+        width: 40px; /* Reducir el tamaño de los íconos */
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pie-pagina .grupo-1 .box figure img {
+        width: 120px; /* Reducir aún más el tamaño de la imagen en pantallas muy pequeñas */
+    }
+
+    .pie-pagina .grupo-1 .box h2,
+    .pie-pagina .grupo-1 .box p {
+        font-size: 16px; /* Ajustar más el tamaño de la fuente */
+    }
+
+    .pie-pagina .grupo-1 .red-social a {
+        width: 35px; /* Reducir aún más el tamaño de los íconos */
+        height: 35px;
+        line-height: 35px;
+    }
+}
